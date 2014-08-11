@@ -1,0 +1,6 @@
+{
+    "files": [{
+        "from": "Model.js.hbs",
+        "to": "app/models/{{module}}/{{name}}.js"
+    }]
+}

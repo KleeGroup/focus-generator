@@ -1,0 +1,14 @@
+{
+    "files": [{
+        "from": "ListView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}ListView.js"
+    }, {
+        "from": "ListTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}List.hbs"
+    }],
+    "dependencies": [{
+		"type": "service"
+	}, {
+		"type":"model-collection"
+	}]
+}

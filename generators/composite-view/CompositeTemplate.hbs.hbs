@@ -1,0 +1,18 @@
+\{{!-- us in the view : "app/views/{{module}}/{{name}}CompositeView.js--}}
+\{{#page "{{module}}.{{name}}.title" }}
+    \{{!-- Bind child views to the template using following pattern: <div id="{{name}}ConsultEdit"></div> --}}
+  \{{#panel}}
+    \{{#form}}
+      {{!-- Inputs to set.--}}
+    \{{/form}}
+    \{{#btn_toolbar}}
+      \{{#if isEdit}}
+        \{{button "Save" class="btnSave" type="submit"}}
+        \{{button "Cancel" class="btnCancel"}}
+      \{{else}}
+        \{{button "Edit" class="btnEdit"}}
+      \{{/if}}
+    \{{/btn_toolbar}}
+   \{{/panel}}
+ \{{#page}}
+

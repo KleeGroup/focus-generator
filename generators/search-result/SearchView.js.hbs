@@ -1,0 +1,27 @@
+﻿/** 
+ * @module app/views/{{module}}/{{name}}SearchView
+ * @description This view is use in : __TO_FILL__
+ */
+
+//Dependencies
+var ResultsView = require('./{{name}}ResultView');
+var template = require('./templates/{{name}}Search');
+var ResultCollection = require('../../models/{{module}}/{{name}}Collection');
+var {{#camelize}}{{name}}{{/camelize}}Svc = require('../../services/{{module}}/service{{#camelize}}{{name}}{{/camelize}}');
+
+/**
+ * [__TO_FILL__]
+ * @type {SearchView} - define the searchview for {{name}} see lib/views/search-view.js in fmk..
+ * @property {class} Results - Collection use for the results.
+ * @property {function} search - Service to do the search.
+ * @property {template} template - Search view template.
+ * @property {array} referenceNames - The list of references to load.
+ * @property {class} ResultsView - The Result view of the search pages.
+ */
+module.exports = Fmk.Views.SearchView.extend({
+	Results: ResultCollection,
+  ResultsView: ResultsView,
+	search: {{#camelize}}{{name}}{{/camelize}}Svc.search,
+  template: template,
+  referenceNames: []
+});

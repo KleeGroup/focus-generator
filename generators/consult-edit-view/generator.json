@@ -1,0 +1,17 @@
+{
+    "files": [{
+        "from": "ConsultEditView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}ConsultEditView.js"
+    }, {
+        "from": "ConsultTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Consult.hbs"
+    }, {
+        "from": "EditTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Edit.hbs"
+    }],
+    "dependencies": [{
+		"type": "service"
+	}, {
+		"type":"model"
+	}]
+}

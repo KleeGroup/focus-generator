@@ -1,0 +1,23 @@
+{
+    "files": [{
+        "from": "ListView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}ListView.js"
+    }, {
+        "from": "ListTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}List.hbs"
+    }, {
+        "from": "LineView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}LineView.js"
+    }, {
+        "from": "LineTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Line.hbs"
+    }, {
+        "from": "LineEditTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}LineEdit.hbs"
+    }],
+    "dependencies": [{
+		"type": "service"
+	}, {
+		"type":"model-collection"
+	}]
+}

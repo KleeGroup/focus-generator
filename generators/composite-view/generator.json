@@ -1,0 +1,10 @@
+{
+    "files": [{
+        "from": "CompositeView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}CompositeView.js"
+    }, {
+        "from": "CompositeTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Composite.hbs"
+    }],
+    "dependencies": []
+}

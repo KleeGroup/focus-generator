@@ -1,0 +1,6 @@
+{
+    "files": [{
+        "from": "Service.js.hbs",
+        "to": "app/services/{{module}}/service{{#camelize}}{{name}}{{/camelize}}.js"
+    }]
+}

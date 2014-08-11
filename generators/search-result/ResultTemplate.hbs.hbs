@@ -1,0 +1,17 @@
+\{{!--Template use in app/views/{{module}}/{{name}}ResultView.js --}}
+<div>
+  \{{open_result_table }}
+        <thead id="tableHeader">
+          <tr>
+            <th style="width:20%;">\{{sortColumn "#COL1" translationKey="#LABEL_SEARCH_COL1"}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          \{{#each collection}}
+          <tr>
+            <td>\{{display_for "#COL1" isNoLabel=true}}</td>
+          </tr>
+          \{{/each}}
+        </tbody>
+  \{{close_result_table}}
+</div>

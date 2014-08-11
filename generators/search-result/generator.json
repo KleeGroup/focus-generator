@@ -1,0 +1,20 @@
+{
+    "files": [{
+        "from": "ResultView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}ResultView.js"
+    }, {
+        "from": "SearchView.js.hbs",
+        "to": "app/views/{{module}}/{{name}}SearchView.js"
+    }, {
+        "from": "ResultTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Result.hbs"
+    }, {
+        "from": "SearchTemplate.hbs.hbs",
+        "to": "app/views/{{module}}/templates/{{name}}Search.hbs"
+    }],
+    "dependencies": [{
+		"type": "service"
+	}, {
+		"type":"model-collection"
+	}]
+}

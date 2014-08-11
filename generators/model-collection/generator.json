@@ -1,0 +1,9 @@
+{
+    "files":[{
+        "from": "ModelCollection.js.hbs",
+        "to": "app/models/{{module}}/{{name}}Collection.js"
+    }],
+    "dependencies": [
+        { "type": "model" }
+    ]
+}

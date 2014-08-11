@@ -1,0 +1,17 @@
+\{{!-- use in app/views/{{module}}/{{name}}ListView--}}
+\{{#panel "{{module}}.{{name}}.title" }}
+  \{{open_result_table }}
+    <thead id="tableHeader">
+      <tr>
+        <!-- TODO: Add columns to display properties -->
+      </tr>
+    </thead>
+    <tbody>
+      \{{#each collection}}
+      <tr>
+	<!-- TODO: Add display for each column -->
+      </tr>
+      \{{/each}}
+    </tbody>
+  \{{close_result_table}}
+\{{/panel}} 

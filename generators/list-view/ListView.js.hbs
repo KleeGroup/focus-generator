@@ -1,0 +1,27 @@
+﻿/** 
+ * @module app/views/{{module}}/{{name}}ListView
+ * @description This view is use in : __TO_FILL__
+ */
+
+// Dependencies.
+var template{{name}}List = require('./templates/{{name}}List');
+var ResultSelectionModel = require('../../models/{{module}}/{{name}}.Collection');
+var service{{#camelize}}{{name}}{{/camelize}} = require('../../services/{{module}}/service{{#camelize}}{{name}}{{/camelize}}');
+//var ServiceExport = require('../../services/export/serviceExport');
+//var Url = require('../../models/URL');
+
+/**
+ * ListView for {{module}}/{{name}}.
+ * @type {ListView} see lib/views/list-view.js in fmk.
+ * @property {template} template - The template of the list view.
+ * @property {array} referenceNames - The list of the references you need in your view.
+ * @property {function} search - The function to call in order to load the list content.
+ * @property {function} exportSvc - The function to call in order to load the export list content.
+ */
+module.exports = Fmk.Views.ListView.extend({
+    template: template{{name}}List,
+    referenceNames: [],
+    search: service{{#camelize}}{{name}}{{/camelize}}.list{{#camelize}}{{name}}{{/camelize}} // TODO: Implement the list method in service.
+    // TODO: if the list can be exported, define the export url and the corresponding action on the controller.
+    //exportSvc: ServiceExport.export(Url.{{module}}.{{name}}CollectionExport)
+});
