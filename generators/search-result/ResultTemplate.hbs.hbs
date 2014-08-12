@@ -1,6 +1,6 @@
 \{{!--Template use in app/views/{{module}}/{{name}}ResultView.js --}}
 <div>
-  \{{open_result_table }}
+  \{{#result "module.name.title"}}
         <thead id="tableHeader">
           <tr>
             <th style="width:20%;">\{{sortColumn "#COL1" translationKey="#LABEL_SEARCH_COL1"}}</th>
@@ -13,5 +13,5 @@
           </tr>
           \{{/each}}
         </tbody>
-  \{{close_result_table}}
+  \{{/result}}
 </div>

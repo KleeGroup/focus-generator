@@ -1,14 +1,15 @@
 \{{!--Template use in app/views/{{module}}/{{name}}SearchView.js --}}
-\{{open_criteria "TODO : Add the information to display" }}
+\{{#criteria "TODO : Add the information to display" }}
     \{{#form}}
         <div class="row">
           <div class="col-md-6">\{{input_for "#CRITERE_1"}}</div>
         </div>
         <br />
-
-        \{{button "button.reset" class="btnReset"}}
-        \{{button "button.search" icon="search" class="btn-primary pull-right" type="submit"}}
+        \{{#btn_toolbar}}
+          \{{button_reset}}
+          \{{button_search}}
+        \{{/btn_toolbar}}
     \{{/form}}
-\{{close_criteria}}
+\{{/criteria}}
 
 \{{result_container}}

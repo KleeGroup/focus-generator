@@ -1,6 +1,6 @@
 \{{!-- use in app/views/{{module}}/{{name}}ListView--}}
 \{{#panel "{{module}}.{{name}}.title" }}
-  \{{open_result_table }}
+  \{{#result "{{module}}.{{name}}.title" }}
     <thead id="tableHeader">
       <tr>
         <!-- TODO: Add columns to display properties -->
@@ -13,5 +13,5 @@
       </tr>
       \{{/each}}
     </tbody>
-  \{{close_result_table}}
+  \{{/result}}
 \{{/panel}} 
