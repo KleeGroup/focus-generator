@@ -8,3 +8,4 @@ Renseigner les deux chemins relatifs suivants dans le nouveau generate.bat:
 	(le répertoire contenant le dossier 'app')
 	- **pathToGeneratorBat**: le chemin relatif, depuis le fichier generate.bat nouvellement créé, jusqu'au dossier contenant le fichier generator.bat1
 	`(SPA-Fmk\Main\Sources\SPA-tools\TemplateGenerator)`
+  - Faire un `npm install` dans le dossier **scaffolt**.
