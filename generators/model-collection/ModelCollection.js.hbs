@@ -19,8 +19,7 @@ var SingleModel = require('./{{name}}');
  */
 module.exports = Fmk.Models.PaginatedCollection.extend({
     model: SingleModel,
-    modelName: "{{module}}.{{name}}Collection", // TODO: Verify that the modelName is correct
-    url: URL.{{module}}.{{name}}Collection // TODO: define the Url and corresponding controller.
+    modelName: "{{module}}.{{name}}Collection" // TODO: Verify that the modelName is correct
     // TODO: define the default sortField for this collection.
     //sortField: { field: "fieldName", order: "asc" },
     // TODO: if the collection can be exported, define the column labels for export.

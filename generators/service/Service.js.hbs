@@ -50,9 +50,9 @@ var save = function save{{#camelize}}{{name}}{{/camelize}}(json{{#camelize}}{{na
 * @return {object} - Return a **Promise** of saving the data.
 * @url __TO_FILL__ //Example url of the server to call : localhost/api/name/id
 */
-var search = function search{{#camelize}}{{name}}{{/camelize}}(criteria, pagesInfo){
+var search = function search{{#camelize}}{{name}}{{/camelize}}(criteria, pagesInfos){
   var url = URL.{{module}}.{{name}};
-  return Promisify.collection(url).fetchData({criteria: criteria, pagesInfo: pagesInfo});
+  return Promisify.collection(url).fetchData({criteria: criteria, pagesInfos: pagesInfos});
 }
 
 // TODO: add needed service functions to module.exports.
